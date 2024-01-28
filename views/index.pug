@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 Tabla de Multiplicar
+
+  // Formulario
+  form(action='/multiplicar', method='post')
+    div.form-group
+      label(for='base') ¿Base de multiplicación?
+      input#base.form-control(type='text', name='base', required=true)
+    button.btn.btn-primary(type='submit') Enviar

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Resultados de la Tabla de Multiplicar
+
+  p Tabla de multiplicar del número #{base}:
+
+  
+  each line in resultado.split('\n')
+    p= line
